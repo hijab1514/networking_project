@@ -1,4 +1,4 @@
-# 🖥️ Computer Networking(006) Project (Socket Programming)- Homework 3
+# Computer Networking(006) Project (Socket Programming)- Homework 3
 #TEAM-11
 ## Overview
 
@@ -117,7 +117,7 @@ Run make without arguments to see a help message.
 
 | Member | Role                                 | Core Responsibilities                                                                                                                 |
 | -----: | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-|      1 | Protocol & Socket Developer          | Implements the Python server, handles incoming connections, parses requests and generates responses.                                  |
+|FATIMA- 23013072 | Protocol & Socket Developer          | Implements the Python server, handles incoming connections, parses requests and generates responses.                                  |
 |RASEL- 24013592| Client Developer + Extra Features    | Implements the Python client, communicates with the server and adds extra features such as logging or file transfer.                  |
 |ARAFAT- 24012958 | Build & Documentation Lead  | Writes and maintains the `Makefile` and `README.md`, ensures the project runs from a clean clone, and keeps documentation up to date. |
 |ABDULLAH- 24013590| Testing & Contribution Manager       | Tests the system, reports bugs, prepares the demo plan and maintains `CONTRIBUTION.md`.                                               |
