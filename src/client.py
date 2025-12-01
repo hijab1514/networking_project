@@ -5,9 +5,9 @@ BUFFER_SIZE = 4096
 
 def main():
 
-  # Validate command-line arguments
+    # Validate command-line arguments
   
-  if len(sys.argv) < 5:
+    if len(sys.argv) < 5:
         print(f"Usage: python3 {sys.argv[0]} <server_ip> <port> <GET/HEAD> <path>")
         sys.exit(1)
 
@@ -17,14 +17,14 @@ def main():
     path = sys.argv[4]
 
     # Validate method (GET or HEAD only)
-   
-  if method not in ["GET", "HEAD"]:
+  
+    if method not in ["GET", "HEAD"]:
         print("Error: Method must be GET or HEAD.")
         sys.exit(1)
 
     # Create TCP socket
-
-  client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     try:
         # Connect to server
@@ -34,6 +34,7 @@ def main():
         sys.exit(1)
 
     # Build HTTP request (GET or HEAD)
+  
     request = (
         f"{method} {path} HTTP/1.1\r\n"
         f"Host: {server_ip}\r\n"
@@ -48,6 +49,7 @@ def main():
     print(request)
 
     # Receive server response
+  
     print("=== Server Response ===\n")
 
     while True:
@@ -57,10 +59,10 @@ def main():
         print(data.decode(errors="replace"), end="")
 
     # Close connection
+  
     client_socket.close()
     print("\n\n[Client Finished]")
 
 
 if __name__ == "__main__":
     main()
-
