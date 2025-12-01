@@ -6,7 +6,7 @@ Each member contributed to a different core component to ensure protocol correct
 
 ---
 
-## 👤 **Member 1 – Protocol & Socket Developer (Server Developer)**
+## 👤 **Fatima 23013072 – Protocol & Socket Developer (Server Developer)**
 
 **Main Responsibilities:**
 
@@ -23,7 +23,7 @@ Each member contributed to a different core component to ensure protocol correct
 
 ---
 
-## 👤 **Member 2 – Client Developer & Extra Feature Implementation**
+## 👤 **ARIFUL- 24013592 – Client Developer & Extra Feature Implementation**
 
 **Main Responsibilities:**
 
@@ -44,7 +44,7 @@ Each member contributed to a different core component to ensure protocol correct
 
 ---
 
-## 👤 **Member 3 – Build System & Documentation Lead**
+## 👤 **ARAFAT- 24012958 – Build System & Documentation Lead**
 
 **Main Responsibilities:**
 
@@ -71,7 +71,7 @@ Each member contributed to a different core component to ensure protocol correct
 
 ---
 
-##  **Member 4 – Tester, Debugger & Demo Manager**
+##  **ABDULLAH- 24013590 – Tester, Debugger & Demo Manager**
 
 **Main Responsibilities:**
 
