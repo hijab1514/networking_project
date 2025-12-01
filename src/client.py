@@ -1,5 +1,5 @@
 """
- Member 2 – HTTP Client Developer + Extra Features 
+ Member 2 – HTTP Client & Features Developer 
  Author: Rasel MD Ariful Islam
 """
 
