@@ -61,7 +61,7 @@ Each member contributed to a different core component to ensure protocol correct
   * How to run the client
   * Example commands for testing
   * Team member roles
-* Ensured the entire project compiles correctly from a **clean checkout** (fresh clone).
+* Ensured the entire project compiles correctly from a **clean checkout** 
 * Helped maintain project structure and directory organization.
 
 **Files Contributed:**
