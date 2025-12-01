@@ -95,10 +95,10 @@ Each member contributed to a different core component to ensure protocol correct
 
 | Member | Role                          | Main Contribution                                  |
 | ------ | ----------------------------- | -------------------------------------------------- |
-| **1**  | Protocol & Socket Developer   | Raw TCP server, HTTP parsing, response handling    |
-| **2**  | Client + Features Developer   | HTTP client, additional functionality              |
-| **3**  | Build & Documentation Lead    | Makefile, README, project structure                |
-| **4**  | Tester & Contribution Manager | Testing, debugging, demo planning, CONTRIBUTION.md |
+|*Fatima*  | Protocol & Socket Developer   | Raw TCP server, HTTP parsing, response handling    |
+| *ARIFUL*  | Client + Features Developer   | HTTP client, additional functionality              |
+| *ARAFAT*  | Build & Documentation Lead    | Makefile, README, project structure                |
+| *ABDULLAH*  | Tester & Contribution Manager | Testing, debugging, demo planning, CONTRIBUTION.md |
 
 
 
