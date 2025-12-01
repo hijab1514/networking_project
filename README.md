@@ -44,7 +44,7 @@ networking_project/
 ## Setup
 
 ```Clone the repository and navigate into it:
-git clone <repository-url>
+git clone https://github.com/hijab1514/networking_project
 cd networking_project
 ```
 No compilation is necessary. The provided Makefile offers convenience
@@ -54,15 +54,10 @@ targets for running the server and client, and for cleaning up .pyc files.
 
 To start the server on all interfaces (0.0.0.0) and port 8000:
 ```
-python3 src/server.py --host 0.0.0.0 --port 8000
+python3 src/server.py --http://localhost:8080
+
 ```
-If you prefer to use the Makefile:
-```
-make server
-```
-This runs the same command defined above. Adjust the --host and --port options
-as needed; you can add additional command‑line arguments in server.py for
-protocol‑specific behavior.
+
 
 ## Running the Client
 
