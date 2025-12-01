@@ -1,33 +1,32 @@
-CC      := gcc
-CFLAGS  := -Wall -Wextra -g
+PYTHON := python3
+# Default host and port; can be overridden on the command line
+HOST   ?= 0.0.0.0
+PORT   ?= 8000
 
-# Source files in the src directory
-SERVER_SRC := src/server.c
-CLIENT_SRC := src/client.c
+.PHONY: all server client clean help
 
-# Output binaries
-SERVER_BIN := server
-CLIENT_BIN := client
+## Default target: show help
+all: help
 
-.PHONY: all server client clean
+## Run the Python server
+server:
+	@echo "Starting server on $(HOST):$(PORT)..."
+	$(PYTHON) src/server.py --host $(HOST) --port $(PORT)
 
-# Default target: build both server and client
-all: $(SERVER_BIN) $(CLIENT_BIN)
+## Run the Python client
+client:
+	@echo "Starting client connecting to $(HOST):$(PORT)..."
+	$(PYTHON) src/client.py --host $(HOST) --port $(PORT)
 
-# Build the server binary
-$(SERVER_BIN): $(SERVER_SRC)
-	$(CC) $(CFLAGS) -o $@ $<
-
-# Build the client binary
-$(CLIENT_BIN): $(CLIENT_SRC)
-	$(CC) $(CFLAGS) -o $@ $<
-
-# Build only the server
-server: $(SERVER_BIN)
-
-# Build only the client
-client: $(CLIENT_BIN)
-
-# Remove compiled binaries and object files
+## Remove compiled Python bytecode files
 clean:
-	rm -f $(SERVER_BIN) $(CLIENT_BIN) *.o
+	@echo "Removing cached .pyc files..."
+	find . -name '*.pyc' -delete
+
+## Display available targets and usage
+help:
+	@echo "Available Makefile targets:"
+	@echo "  make server HOST=<addr> PORT=<port>  - Run the server (defaults to 0.0.0.0:8000)"
+	@echo "  make client HOST=<addr> PORT=<port>  - Run the client (defaults to localhost:8000)"
+	@echo "  make clean                          - Remove .pyc files"
+	@echo "  make help                           - Show this help message"
