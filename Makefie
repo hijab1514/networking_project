@@ -1,0 +1,33 @@
+CC      := gcc
+CFLAGS  := -Wall -Wextra -g
+
+# Source files in the src directory
+SERVER_SRC := src/server.c
+CLIENT_SRC := src/client.c
+
+# Output binaries
+SERVER_BIN := server
+CLIENT_BIN := client
+
+.PHONY: all server client clean
+
+# Default target: build both server and client
+all: $(SERVER_BIN) $(CLIENT_BIN)
+
+# Build the server binary
+$(SERVER_BIN): $(SERVER_SRC)
+	$(CC) $(CFLAGS) -o $@ $<
+
+# Build the client binary
+$(CLIENT_BIN): $(CLIENT_SRC)
+	$(CC) $(CFLAGS) -o $@ $<
+
+# Build only the server
+server: $(SERVER_BIN)
+
+# Build only the client
+client: $(CLIENT_BIN)
+
+# Remove compiled binaries and object files
+clean:
+	rm -f $(SERVER_BIN) $(CLIENT_BIN) *.o
