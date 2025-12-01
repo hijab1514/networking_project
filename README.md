@@ -41,12 +41,15 @@ Python 3.8 or newer.
 No external Python packages are required unless the team decides to add
 optional dependencies. If you introduce third‑party libraries, list them in
 a file named requirements.txt and instruct users to install them with:
-  ```sh
-  pip install -r requirements.txt
 
+```
+  pip install -r requirements.txt
+```
 ## Setup
 
-```Clone the repository and navigate into it:
+Clone the repository and navigate into it:
+
+```
 git clone https://github.com/hijab1514/networking_project
 ```
 No compilation is necessary. The provided Makefile offers convenience
