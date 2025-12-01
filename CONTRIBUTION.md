@@ -14,11 +14,11 @@ Each member contributed to a different core component to ensure protocol correct
 * Developed and documented the **HTTP request parsing logic** (method, path, headers).
 * Implemented correct **HTTP responses** including status line and essential headers.
 * Ensured behavior matches **basic RFC 7230 HTTP protocol rules**.
-* Wrote clean, well-commented networking code in `server.c`.
+* Wrote clean, well-commented networking code in `server.py`.
 
 **Files Contributed:**
 
-* `server.c`
+* `server.py`
 
 
 ---
@@ -35,11 +35,11 @@ Each member contributed to a different core component to ensure protocol correct
   * Serving HTML files
   * Logging incoming server requests
   * Supporting additional methods such as **HEAD**
-* Wrote clean, readable, and documented code in `client.c`.
+* Wrote clean, readable, and documented code in `client.py`.
 
 **Files Contributed:**
 
-* `client.c`
+* `client.py`
 * Extra feature modules (if any)
 
 ---
