@@ -1,8 +1,3 @@
-"""
- Member 2 – HTTP Client & Features Developer 
- Author: Rasel MD Ariful Islam
-"""
-
 import socket
 import sys
 
