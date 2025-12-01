@@ -59,13 +59,10 @@ targets for running the server and client, and for cleaning up .pyc files.
 
 To start the server on all interfaces (0.0.0.0) and port 8000:
 ```
-python3 src/server.py --host 0.0.0.0 --port 8000
+python src/server.py 
 
 ```
-Or, if you prefer to use make:
-```
-make server
-```
+`
 
 ## Running the Client
 
@@ -74,9 +71,14 @@ To run the client and connect to a server running on localhost port 8000:
 python3 src/client.py --host localhost --port 8000
 
 ```
-Using the Makefile:
+Run client:
 ```
-make client
+python client.py 127.0.0.1 8080 GET /
+
+```
+Run HEAD
+```
+python client.py 127.0.0.1 8080 HEAD /
 ```
 Just like the server, we can extend the client’s argument parser to support
 additional options (e.g. specifying request paths, sending files, etc.).
