@@ -30,10 +30,7 @@ Each member contributed to a different core component to ensure protocol correct
 * Built the **HTTP client** using raw TCP sockets.
 * Manually constructed and sent HTTP GET requests.
 * Implemented printing & handling of server responses.
-* Added an extra feature (choose one as implemented):
-
-  * Serving HTML files
-  * Logging incoming server requests
+* Added an extra feature:
   * Supporting additional methods such as **HEAD**
 * Wrote clean, readable, and documented code in `client.py`.
 
