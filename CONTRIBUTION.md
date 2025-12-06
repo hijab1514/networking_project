@@ -37,8 +37,6 @@ Each member contributed to a different core component to ensure protocol correct
 **Files Contributed:**
 
 * `client.py`
-* Extra feature modules (if any)
-
 ---
 
 ## 👤 **ARAFAT- 24012958 – Build System & Documentation Lead**
