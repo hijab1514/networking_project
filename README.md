@@ -59,7 +59,7 @@ targets for running the server and client, and for cleaning up .pyc files.
 
 To start the server on all interfaces (0.0.0.0) and port 8000:
 ```
-python src/server.py 
+python networking_project-main\src\server.py 
 
 ```
 `
@@ -68,17 +68,17 @@ python src/server.py
 
 To run the client and connect to a server running on localhost port 8000:
 ```
-python3 src/client.py --host localhost --port 8000
+python networking_project-main\src\client.py
 
 ```
 Run client:
 ```
-python client.py 127.0.0.1 8080 GET /
+python networking_project-main\src\client.py 127.0.0.1 8080 GET /
 
 ```
 Run HEAD
 ```
-python client.py 127.0.0.1 8080 HEAD /
+python networking_project-main\src\client.py 127.0.0.1 8080 HEAD /
 ```
 Just like the server, we can extend the client’s argument parser to support
 additional options (e.g. specifying request paths, sending files, etc.).
