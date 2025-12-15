@@ -1,32 +1,30 @@
-PYTHON := python3
-# Default host and port; can be overridden on the command line
-HOST   ?= 0.0.0.0
-PORT   ?= 8000
+PYTHON := python
+HOST   ?= 127.0.0.1
+PORT   ?= 8080
+METHOD ?= GET
+PATH   ?= /
 
-.PHONY: all server client clean help
-
-## Default target: show help
-all: help
+.PHONY: server client clean help
 
 ## Run the Python server
 server:
-	@echo "Starting server on $(HOST):$(PORT)..."
-	$(PYTHON) src/server.py --host $(HOST) --port $(PORT)
+	@echo "Starting server on port $(PORT)..."
+	$(PYTHON) server.py
 
 ## Run the Python client
 client:
-	@echo "Starting client connecting to $(HOST):$(PORT)..."
-	$(PYTHON) src/client.py --host $(HOST) --port $(PORT)
+	@echo "Connecting to $(HOST):$(PORT)"
+	$(PYTHON) client.py $(HOST) $(PORT) $(METHOD) $(PATH)
 
-## Remove compiled Python bytecode files
+## Remove compiled Python cache files
 clean:
 	@echo "Removing cached .pyc files..."
 	find . -name '*.pyc' -delete
 
-## Display available targets and usage
+## Show help
 help:
 	@echo "Available Makefile targets:"
-	@echo "  make server HOST=<addr> PORT=<port>  - Run the server (defaults to 0.0.0.0:8000)"
-	@echo "  make client HOST=<addr> PORT=<port>  - Run the client (defaults to localhost:8000)"
-	@echo "  make clean                          - Remove .pyc files"
-	@echo "  make help                           - Show this help message"
+	@echo "  make server"
+	@echo "  make client METHOD=GET PATH=/"
+	@echo "  make client METHOD=GET PATH=/abc"
+	@echo "  make clean"
